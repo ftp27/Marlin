@@ -991,7 +991,7 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK    10  // May be used by Linear Advance
+#define DEFAULT_EJERK    5.0  // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor
@@ -1827,37 +1827,6 @@
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save PROGMEM.
 //#define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
-
-// /*
-// MKS Robin EEPROM:
-// EEPROM_SD
-// EEPROM_W25Q
-// */
-// #define EEPROM_W25Q
-
-// #if ENABLED(EEPROM_W25Q)
-// #undef SDCARD_EEPROM_EMULATION
-// #undef USE_REAL_EEPROM
-// #undef FLASH_EEPROM_EMULATION
-// #undef SRAM_EEPROM_EMULATION
-// #undef I2C_EEPROM_AT24C16
-// #define SPI_EEPROM_W25Q
-// #define SPI_EEPROM
-// #define SPI_EEPROM_OFFSET 0x700000
-// #define USE_WIRED_EEPROM    1
-// #define MARLIN_EEPROM_SIZE  4096
-// #endif
-
-// #if ENABLED(EEPROM_SD)
-// #define SDCARD_EEPROM_EMULATION
-// #undef USE_REAL_EEPROM
-// #undef FLASH_EEPROM_EMULATION
-// #undef SRAM_EEPROM_EMULATION
-// #undef I2C_EEPROM_AT24C16
-// #undef SPI_EEPROM_W25Q
-// #undef USE_WIRED_EEPROM 
-// #define MARLIN_EEPROM_SIZE  4096
-// #endif
 
 // #define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
 
